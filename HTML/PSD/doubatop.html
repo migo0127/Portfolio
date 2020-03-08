@@ -1,0 +1,193 @@
+ <!DOCTYPE html>
+ <html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+
+            *{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+
+            a{
+                text-decoration: none;
+                color:black;
+            }
+
+            .container{
+                height: 28px;
+                background-color: #aaa;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .left-top{
+                display: flex;
+                line-height: 28px;
+            }
+
+            .top{
+                display: flex;
+                line-height: 28px;
+            }
+
+            .top-wrap li{
+                padding: 0 12px;
+                font-size: 12px;
+            }
+
+            .top-wrap  .top-qrcode{
+                padding: 0 8px;
+            }
+
+            .left-top > li:hover > a,
+            .top > li:hover > a{
+                display: block;
+                color:#fff;
+            }
+
+            .top-qrcode{
+                position: relative;
+            }
+
+            .qrcode-wrap{
+                width: 220px;
+                height: 0px;
+                border: 1px solid rgba(0,0,0,0.1);
+                transition:3s;
+                position: absolute;
+                top:28px;
+                left: -90px;
+                display: none;
+            }
+
+            .top-qrcode:hover .qrcode-wrap{                
+                height: 480px;
+                display: block;
+            }
+
+            .qrcode-wrap > div{
+                margin: 0 auto;
+            }
+
+            .qrcode-wrap .pic-logo{
+                width: 180px;
+                height: 180px;
+                margin-top: 30px;
+            }
+
+            .qrcode-wrap .pic-qrcode{
+                width: 180px;
+                height: 180px;
+                margin-top: 20px;
+            }
+
+            .qrcode-wrap img{
+                vertical-align: bottom;
+            }
+
+            .qrcode-wrap .txt{
+                position: absolute;
+                top: 430px;
+                left: 48px;
+            }
+
+            .qrcode-wrap .txt > a{
+                color:blue;
+                padding: 0 5px;
+            }
+
+            .user-info{
+                position: relative;
+            }
+            
+            .top .user-wrap{
+                width: 80px;
+                height: 150px;
+                border: 1px solid rgba(0,0,0,0.1);
+                position: absolute;
+                top:28px;
+                left:-18px;
+                display: none;
+            }
+
+            .user-wrap .user-list{
+                margin: 15px auto;
+            }
+
+           .top > .user-info:hover .user-wrap{
+               display: block;
+           }
+
+          .user-wrap li:hover{
+                background-color: #aaa;
+          }
+
+        </style>
+
+    </head>
+    <body>
+
+        <div class="top-wrap">
+            <div class="container">
+                <ul class="left-top">
+                    <li>
+                        <a href="#">豆瓣</a>     
+                    </li>
+                    <li>
+                        <a href="#">小組</a> 
+                    </li>
+                    <li>
+                        <a href="#">相簿</a> 
+                    </li>
+                    <li>
+                        <a href="#">新聞</a> 
+                    </li>
+                    <li>
+                        <a href="#">電影</a> 
+                    </li>
+                </ul>
+                <ul class="top">
+                    <li class="top-qrcode">
+                        <a href="#">下載App</a>
+                        <div class="qrcode-wrap">
+                            <div class="pic-logo">
+                                <img src="https://picsum.photos/180/180?random=2">
+                            </div>
+                            <div class="pic-qrcode">
+                                <img src="https://picsum.photos/180/180?random=5">
+                            </div>
+                            <div class="txt">
+                                <a href="#">iphone</a>
+                                <span>.</span>
+                                <a href="#">Andriod</a>
+                             </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">主頁</a>
+                    </li>
+                    <li>
+                        <a href="#">豆郵</a>
+                    </li>
+                    <li class="user-info">
+                        <a href="#">我的帳號</a>
+                        <div class="user-wrap">
+                            <ul class="user-list">
+                                <li><a href="#">我的首頁</a></li>
+                                <li><a href="#">管理帳號</a></li>
+                                <li><a href="#">我的日誌</a></li>
+                                <li><a href="#">退出</a></li>
+                            </ul>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </body>
+ </html>

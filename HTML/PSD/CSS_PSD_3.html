@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>切版：交錯漂浮版</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        body{
+            padding-top:150px;
+            background-color: black;
+        }
+
+        .wrap{
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .items{
+            display: flex;
+            align-items: center;
+            margin-bottom: 70px;
+        }
+
+        .items .txt{
+            width: 55%;
+            flex-shrink:0;
+            z-index: 1;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .items:nth-child(1) .txt{
+            background-color: rgba(255, 194, 204,0.7);
+        }
+
+        .items:nth-child(2) .txt{
+            background-color:rgba(119, 187, 255,0.7);
+        }
+
+        .items:nth-child(3) .txt{
+            background-color:rgba(254,201,121,0.7);
+        }
+
+        .items:nth-child(4) .txt{
+            background-color:rgba(149,219,214,0.7);
+        }
+
+        .items .txt p{
+            line-height: 1.5;
+            text-indent:17px;
+            margin-top: 3px;
+        }
+
+        .items .pic{
+            width: 55%;
+            flex-shrink:0;
+        }
+
+        .items .pic img{
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .items > :first-child{
+            margin-right: -10%;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="items">
+            <div class="pic">
+                <img src="https://picsum.photos/600/350?random=1" alt="">
+            </div>
+            <div class="txt">
+                <h2>《聲入人心》</h2>
+                <p>是由湖南衛視製作的原創新形態聲樂演唱節目，其初衷是希望透過推廣美聲，消除大家對高雅音樂的誤解。一直以來在亞洲，美聲是一種相對小眾的藝術，曲高和寡，怎麼被主流審美接受？</p>
+            </div>
+        </div>
+        <div class="items">
+            <div class="txt">
+                <h2>《聲入人心》</h2>
+                <p>是由湖南衛視製作的原創新形態聲樂演唱節目，其初衷是希望透過推廣美聲，消除大家對高雅音樂的誤解。一直以來在亞洲，美聲是一種相對小眾的藝術，曲高和寡，怎麼被主流審美接受？</p>
+            </div>
+            <div class="pic">
+                <img src="https://picsum.photos/600/350?random=2" alt="">
+            </div>
+        </div>
+        <div class="items">
+            <div class="pic">
+                <img src="https://picsum.photos/600/350?random=3" alt="">
+            </div>
+            <div class="txt">
+                <h2>《聲入人心》</h2>
+                <p>是由湖南衛視製作的原創新形態聲樂演唱節目，其初衷是希望透過推廣美聲，消除大家對高雅音樂的誤解。一直以來在亞洲，美聲是一種相對小眾的藝術，曲高和寡，怎麼被主流審美接受？</p>
+            </div>
+        </div>
+        <div class="items">
+            <div class="txt">
+                <h2>《聲入人心》</h2>
+                <p>是由湖南衛視製作的原創新形態聲樂演唱節目，其初衷是希望透過推廣美聲，消除大家對高雅音樂的誤解。一直以來在亞洲，美聲是一種相對小眾的藝術，曲高和寡，怎麼被主流審美接受？</p>
+            </div>
+            <div class="pic">
+                <img src="https://picsum.photos/600/350?random=4" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body {
+  padding: 150px 0;
+  background: linear-gradient(135deg, #AAAAAA, #666666);
+}
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.wrap .items {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.wrap .items .pic {
+  width: 55%;
+  flex-shrink: 0;
+}
+.wrap .items .pic img {
+  width: 100%;
+  vertical-align: middle;
+}
+.wrap .items .txt {
+  width: 55%;
+  flex-shrink: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.wrap .items .txt p {
+  line-height: 1.5;
+  text-indent: 18px;
+  margin-top: 5px;
+}
+.wrap .items > :first-child {
+  margin-right: -10%;
+}
+.wrap .items:nth-child(1) .txt {
+  background-color: rgba(219, 118, 152, 0.7);
+}
+.wrap .items:nth-child(2) .txt {
+  background-color: rgba(245, 231, 105, 0.7);
+}
+.wrap .items:nth-child(3) .txt {
+  background-color: rgba(48, 228, 235, 0.7);
+}
+.wrap .items:nth-child(4) .txt {
+  background-color: rgba(218, 61, 61, 0.7);
+}
+/*# sourceMappingURL=./CSS_PSD_3.css.map */
