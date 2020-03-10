@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message訊息框切版</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        img{
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .contanier{
+            width: 500px;
+            height: 600px;
+            background-color: #F3F5F6;
+            margin: 20px auto;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        .contanier .remote, .local{
+            width:100%;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .contanier .local{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .contanier .username{
+            text-align: center;
+        }
+
+        .contanier .txt{
+            font-family: "Microsoft JhengHei", "微軟正黑體", sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            max-width: 250px;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        .remote > .avatar{
+            margin-right: 20px;
+        }
+
+        .remote .txt{
+            background-color: #fff;
+        }
+
+        .remote .txt::before{
+            content: "";
+            display: block;
+            width: 1px;
+            width: 1px;
+            border-top:8px solid transparent;
+            border-bottom:8px solid transparent;
+            border-right:10px solid #fff;
+            position: absolute;
+            top:39%;
+            /* right: 50%;
+            margin-right: 135px; */
+            left: 50%;
+            margin-left: -146px;
+        }
+
+        .avatar .pic{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 3px;
+        }
+
+        .local .avatar{
+            order: 2;
+            margin-left: 20px;
+        }
+
+        .local .txt{
+            background-color: rgb(144, 202, 243);
+        }
+
+        .local .txt::after{
+            content: "";
+            display: block;
+            width: 1px;
+            width: 1px;
+            border-top:8px solid transparent;
+            border-bottom:8px solid transparent;
+            border-left:10px solid rgb(144, 202, 243);
+            position: absolute;
+            top:39%;
+            right:50%;
+            margin-right: -146px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="contanier">
+            <!-- 1.左方/遠端 -->
+            <div class="remote">
+                <div class="avatar">
+                    <div class="pic">
+                        <img src="img/aga.jpg" alt="">
+                    </div>
+                    <div class="username">Ayuga</div>
+                </div>
+                <div class="txt">
+                    <p>聲入人心</p>
+                </div>
+            </div>
+            <!-- 1.右方/本地 -->
+            <div class="local">
+                <div class="avatar">
+                    <div class="pic">
+                        <img src="img/DL2.jpg" alt="">
+                    </div>
+                    <div class="username">DL</div>
+                </div>
+                <div class="txt">
+                    <p>夢想開始的地方</p>
+                </div>
+            </div>
+             <!-- 2.左方/遠端 -->
+             <div class="remote">
+                <div class="avatar">
+                    <div class="pic">
+                        <img src="img/aga.jpg" alt="">
+                    </div>
+                    <div class="username">Ayuga</div>
+                </div>
+                <div class="txt">
+                    <p>光從不吝嗇鋒芒 讓可能炫燃肆放 穿透所有阻擋 給存在鋪上閃耀</p>
+                </div>
+            </div>
+            <!-- 2.右方/本地 -->
+            <div class="local">
+                <div class="avatar">
+                    <div class="pic">
+                        <img src="img/DL2.jpg" alt="">
+                    </div>
+                    <div class="username">DL</div>
+                </div>
+                <div class="txt">
+                    <p>歌只為真心酣暢 讓平庸染上跌宕 啊一唱一和之間 把活著映得漂亮</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

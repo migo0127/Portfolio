@@ -56,17 +56,23 @@
             .qrcode-wrap{
                 width: 220px;
                 height: 0px;
-                border: 1px solid rgba(0,0,0,0.1);
-                transition:3s;
+                border: 1px solid rgba(211, 211, 211,0.5);
+                border-top: 1px transparent solid;
+                border-bottom: 1px transparent solid;
+                transition: 1s;
                 position: absolute;
-                top:28px;
+                top:27px;
                 left: -90px;
-                display: none;
+                /* display: none; */
+
+                /* 若要搭配過渡效果，要使用overflow */
+                overflow:hidden;
             }
 
             .top-qrcode:hover .qrcode-wrap{                
                 height: 480px;
                 display: block;
+                border-bottom: 1px rgba(211, 211, 211,0.5) solid;
             }
 
             .qrcode-wrap > div{
@@ -117,6 +123,8 @@
             .user-wrap .user-list{
                 margin: 15px auto;
             }
+
+            
 
            .top > .user-info:hover .user-wrap{
                display: block;
