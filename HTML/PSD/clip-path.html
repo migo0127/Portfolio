@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            background: black;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background: url('./img/planet/space.jpg');
+            box-sizing: cover;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .box::before,.box::after{
+            content:'';
+            border: 2px solid #2ecc71;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: -15px;
+            animation: borderClip 8s linear infinite;
+        }
+
+        @keyframes borderClip {
+            0% ,100%{
+                clip: rect(0px,230px,2px,0px);
+            }
+            25%{
+                clip: rect(0px,2px,230px,0px);
+            }
+            50%{
+                clip: rect(228px,230px,230px,0px);
+            }
+            75%{
+                clip: rect(0px,230px,230px,228px);
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+
+
+    </div>
+
+</body>
+</html>
